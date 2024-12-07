@@ -10,20 +10,27 @@
 		03FBA4B82D04607A0071BFA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBA4B72D04607A0071BFA5 /* AppDelegate.swift */; };
 		03FBA4BA2D04607A0071BFA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBA4B92D04607A0071BFA5 /* SceneDelegate.swift */; };
 		03FBA4BC2D04607A0071BFA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBA4BB2D04607A0071BFA5 /* ViewController.swift */; };
-		03FBA4BF2D04607A0071BFA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FBA4BD2D04607A0071BFA5 /* Main.storyboard */; };
 		03FBA4C12D04607C0071BFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FBA4C02D04607C0071BFA5 /* Assets.xcassets */; };
 		03FBA4C42D04607C0071BFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FBA4C22D04607C0071BFA5 /* LaunchScreen.storyboard */; };
+		03FBA4CD2D04609C0071BFA5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03FBA4CC2D04609C0071BFA5 /* SnapKit */; };
+		03FBA4D02D04628F0071BFA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FBA4CE2D04628F0071BFA5 /* Main.storyboard */; };
+		03FBA4D42D0465F00071BFA5 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBA4D32D0465F00071BFA5 /* ContactsViewController.swift */; };
+		03FBA4D62D0466940071BFA5 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBA4D52D0466940071BFA5 /* ContactModel.swift */; };
+		03FBA4D82D0467160071BFA5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FBA4D72D0467160071BFA5 /* ContactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03FBA4B42D04607A0071BFA5 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FBA4B42D04607A0071BFA5 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FBA4B72D04607A0071BFA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FBA4B92D04607A0071BFA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		03FBA4BB2D04607A0071BFA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03FBA4BE2D04607A0071BFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03FBA4C02D04607C0071BFA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03FBA4C32D04607C0071BFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03FBA4C52D04607C0071BFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FBA4CF2D04628F0071BFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03FBA4D32D0465F00071BFA5 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		03FBA4D52D0466940071BFA5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		03FBA4D72D0467160071BFA5 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FBA4CD2D04609C0071BFA5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +48,7 @@
 		03FBA4AB2D04607A0071BFA5 = {
 			isa = PBXGroup;
 			children = (
-				03FBA4B62D04607A0071BFA5 /* Contacts */,
+				03FBA4B62D04607A0071BFA5 /* ContactsApp */,
 				03FBA4B52D04607A0071BFA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +56,34 @@
 		03FBA4B52D04607A0071BFA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03FBA4B42D04607A0071BFA5 /* Contacts.app */,
+				03FBA4B42D04607A0071BFA5 /* ContactsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		03FBA4B62D04607A0071BFA5 /* Contacts */ = {
+		03FBA4B62D04607A0071BFA5 /* ContactsApp */ = {
 			isa = PBXGroup;
 			children = (
+				03FBA4CE2D04628F0071BFA5 /* Main.storyboard */,
 				03FBA4B72D04607A0071BFA5 /* AppDelegate.swift */,
 				03FBA4B92D04607A0071BFA5 /* SceneDelegate.swift */,
 				03FBA4BB2D04607A0071BFA5 /* ViewController.swift */,
-				03FBA4BD2D04607A0071BFA5 /* Main.storyboard */,
 				03FBA4C02D04607C0071BFA5 /* Assets.xcassets */,
 				03FBA4C22D04607C0071BFA5 /* LaunchScreen.storyboard */,
 				03FBA4C52D04607C0071BFA5 /* Info.plist */,
+				03FBA4D32D0465F00071BFA5 /* ContactsViewController.swift */,
+				03FBA4D52D0466940071BFA5 /* ContactModel.swift */,
+				03FBA4D72D0467160071BFA5 /* ContactCell.swift */,
 			);
-			path = Contacts;
+			path = ContactsApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03FBA4B32D04607A0071BFA5 /* Contacts */ = {
+		03FBA4B32D04607A0071BFA5 /* ContactsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03FBA4C82D04607C0071BFA5 /* Build configuration list for PBXNativeTarget "Contacts" */;
+			buildConfigurationList = 03FBA4C82D04607C0071BFA5 /* Build configuration list for PBXNativeTarget "ContactsApp" */;
 			buildPhases = (
 				03FBA4B02D04607A0071BFA5 /* Sources */,
 				03FBA4B12D04607A0071BFA5 /* Frameworks */,
@@ -82,9 +93,12 @@
 			);
 			dependencies = (
 			);
-			name = Contacts;
+			name = ContactsApp;
+			packageProductDependencies = (
+				03FBA4CC2D04609C0071BFA5 /* SnapKit */,
+			);
 			productName = Contacts;
-			productReference = 03FBA4B42D04607A0071BFA5 /* Contacts.app */;
+			productReference = 03FBA4B42D04607A0071BFA5 /* ContactsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 03FBA4AF2D04607A0071BFA5 /* Build configuration list for PBXProject "Contacts" */;
+			buildConfigurationList = 03FBA4AF2D04607A0071BFA5 /* Build configuration list for PBXProject "ContactsApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +125,14 @@
 				Base,
 			);
 			mainGroup = 03FBA4AB2D04607A0071BFA5;
+			packageReferences = (
+				03FBA4CB2D04609C0071BFA5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 03FBA4B52D04607A0071BFA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03FBA4B32D04607A0071BFA5 /* Contacts */,
+				03FBA4B32D04607A0071BFA5 /* ContactsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FBA4D02D04628F0071BFA5 /* Main.storyboard in Resources */,
 				03FBA4C42D04607C0071BFA5 /* LaunchScreen.storyboard in Resources */,
 				03FBA4C12D04607C0071BFA5 /* Assets.xcassets in Resources */,
-				03FBA4BF2D04607A0071BFA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FBA4D82D0467160071BFA5 /* ContactCell.swift in Sources */,
 				03FBA4BC2D04607A0071BFA5 /* ViewController.swift in Sources */,
 				03FBA4B82D04607A0071BFA5 /* AppDelegate.swift in Sources */,
+				03FBA4D42D0465F00071BFA5 /* ContactsViewController.swift in Sources */,
+				03FBA4D62D0466940071BFA5 /* ContactModel.swift in Sources */,
 				03FBA4BA2D04607A0071BFA5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,20 +167,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03FBA4BD2D04607A0071BFA5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03FBA4BE2D04607A0071BFA5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03FBA4C22D04607C0071BFA5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03FBA4C32D04607C0071BFA5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		03FBA4CE2D04628F0071BFA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FBA4CF2D04628F0071BFA5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,7 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = ContactsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = ContactsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03FBA4AF2D04607A0071BFA5 /* Build configuration list for PBXProject "Contacts" */ = {
+		03FBA4AF2D04607A0071BFA5 /* Build configuration list for PBXProject "ContactsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03FBA4C62D04607C0071BFA5 /* Debug */,
@@ -346,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03FBA4C82D04607C0071BFA5 /* Build configuration list for PBXNativeTarget "Contacts" */ = {
+		03FBA4C82D04607C0071BFA5 /* Build configuration list for PBXNativeTarget "ContactsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03FBA4C92D04607C0071BFA5 /* Debug */,
@@ -356,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03FBA4CB2D04609C0071BFA5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03FBA4CC2D04609C0071BFA5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03FBA4CB2D04609C0071BFA5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03FBA4AC2D04607A0071BFA5 /* Project object */;
 }
